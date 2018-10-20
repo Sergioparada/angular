@@ -1,0 +1,13 @@
+<div *ngIf="libro">
+
+  <h2>{{libro.titulo | uppercase}} - DETALLES:</h2>
+  <div><span>ID: </span>{{libro.id}}</div><br>
+  <div><span>Titulo: </span>{{libro.titulo}}</div><br>
+  <div><span>Autor: </span>{{libro.autor}}</div><br>
+  <div><span>Editorial: </span>{{libro.editorial}}</div><br>
+  <div><span>Descripcion: </span>{{libro.descripcion}}</div><br>
+  <div><img src="{{libro.img}}"></div><br>
+
+</div>
+
+<button (click)="irAtras()">Regresar</button>

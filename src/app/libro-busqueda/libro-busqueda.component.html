@@ -1,0 +1,13 @@
+<div id="search-component">
+  <h4>Busqueda por Nombre</h4>
+ 
+  <input #searchBox id="search-box" (keyup)="search(searchBox.value)" />
+ 
+  <ul class="search-result">
+    <li *ngFor="let libro of libros$ | async" >
+      <a routerLink="/detalle/{{libro.id}}">
+        {{libro.name}}
+      </a>
+    </li>
+  </ul>
+</div>

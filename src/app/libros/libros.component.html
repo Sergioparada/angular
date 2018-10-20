@@ -1,0 +1,10 @@
+
+<h2>Mis Libros</h2>
+<ul class="libros">
+  <li *ngFor="let libro of libros">
+      <a routerLink="/detalle/{{libro.id}}">
+        <span class="badge">{{libro.id}}</span> {{libro.titulo}}
+     </a>
+  </li>
+</ul>
+<app-libro-busqueda></app-libro-busqueda>
